@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<input type="text" id="a" name="a">
+<input type="text" id="b" name="b" ><br>
+
+<button type="button" onclick="add()">Addition(+)</button>
+<button type="button" onclick="sub()">Subtraction(-)</button>
+<button type="button" onclick="mul()">Multiplication(x)</button>
+<button type="button" onclick ="div()">Division(/)</button>
+
+<p id="kq1"></p>
+</form>
+</body>
+<script>
+    function add(){
+        var so1 = +document.getElementById("a").value;
+        var so2 = +document.getElementById("b").value;
+        var x= so1 + so2 ;
+        document.getElementById('kq1').innerHTML = +x;
+    }
+function sub(){
+    var so1 = +document.getElementById("a").value;
+    var so2 = +document.getElementById("b").value;
+    var x = so1 - so2 ;
+    document.getElementById('kq1').innerHTML = +x;
+}
+
+function  mul(){
+    var so1 = +document.getElementById("a").value;
+    var so2 = +document.getElementById("b").value;
+    var x = so1 * so2;
+    document.getElementById('kq1').innerHTML = +x;
+}
+function div(){
+    var so1 = +document.getElementById("a").value;
+    var so2 = +document.getElementById("b").value;
+    var x = so1 / so2;
+    document.getElementById('kq1').innerHTML = +x;
+}
+
+</script>
+</html>
